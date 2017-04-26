@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+    <remove-project name="LineageOS/android_hardware_libhardware_legacy" />
+    <project path="hardware/libhardware_legacy" name="AndropaX/android_hardware_libhardware_legacy" />
+
     <!-- Device -->
-    <project path="device/xiaomi/libra" name="AndropaX/android_device_xiaomi_libra" remote="github" revision="RR-7.1" />
+    <project path="device/xiaomi/libra" name="AndropaX/android_device_xiaomi_libra" revision="RR-7.1" />
 
     <!-- Kernel -->
-    <project path="kernel/xiaomi/msm8992" name="AndropaX/android_kernel_xiaomi_msm8992" remote="github" revision="RR-7.1" />
+    <project path="kernel/xiaomi/msm8992" name="AndropaX/android_kernel_xiaomi_msm8992" revision="RR-7.1" />
 
     <!-- Vendor -->
-    <project path="vendor/xiaomi" name="AndropaX/proprietary_vendor_xiaomi" remote="github" revision="RR-7.1" />
+    <project path="vendor/xiaomi" name="AndropaX/proprietary_vendor_xiaomi" revision="RR-7.1" />
 
     <!-- QCOM common -->
-    <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1" />
+    <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" />
 
     <!-- Doze -->
-    <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
+    <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
 
     <!-- Toolchains -->
-    <project path="prebuilts/snapdragon-llvm" name="AndropaX/android_prebuilts_snapdragon-llvm" remote="github" revision="master" />
+    <project path="prebuilts/snapdragon-llvm" name="AndropaX/android_prebuilts_snapdragon-llvm" revision="master" />
 
 </manifest>
